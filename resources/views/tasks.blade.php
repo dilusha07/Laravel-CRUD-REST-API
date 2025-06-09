@@ -31,11 +31,18 @@
                         <th>ID</th>
                         <th>Task</th>
                         <th>Completed</th>
-                        <tr>
+                        @foreach($tasks as $task)
+                            <tr>
+                            <td>{{$task->id}}</td>
+                            <td>{{$task->task}}</td>
+                            <td>{{$task->isCompleted}}</td>
+                            </tr>
+                        @endforeach
+                        <!-- <tr>
                         <td>1</td>
                         <td>I have to learn latavel today</td>
                         <td>Not yet</td>
-                        </tr>
+                        </tr> -->
                             
 
                 </div>

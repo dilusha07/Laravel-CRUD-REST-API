@@ -30,7 +30,8 @@ class TaskController extends Controller
     $task->save();
 
     $data = Task:: all();
-    return view('tasks') -> with('tasks, $data');
+    return view('tasks')->with('tasks', $data);
+
     //dd($data);
     //return redirect()->back()->with('success', 'Task added!');
 }
