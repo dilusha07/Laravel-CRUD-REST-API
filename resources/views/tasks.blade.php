@@ -40,6 +40,10 @@
                                 <button class="btn btn-success">Completed</button>
                                 @else
                                 <button class="btn btn-warning">Not Completed</button>
+                                @endif
+                            </td>
+                            <td>
+                                <a href="/markasCompleted/{{$task->id}}" class="btn btn-primary"></a>
                             </td>
                             </tr>
                         @endforeach
